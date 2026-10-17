@@ -15,6 +15,10 @@ key decisions and open questions, then ask the video anything with Retrieval-Aug
 ![Mistral](https://img.shields.io/badge/LLM-Mistral-FA520F)
 ![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-6E44FF)
 
+[![Live demo](https://img.shields.io/badge/Live%20demo-Open%20the%20app-8B5CF6?style=for-the-badge&logo=streamlit&logoColor=white)](https://ai-video-assistant-with-rag-enhylzyarkuexzqkhky3hc.streamlit.app/)
+
+**Live app:** [ai-video-assistant-with-rag-enhylzyarkuexzqkhky3hc.streamlit.app](https://ai-video-assistant-with-rag-enhylzyarkuexzqkhky3hc.streamlit.app/)
+
 </div>
 
 ---
@@ -32,9 +36,7 @@ key decisions and open questions, then ask the video anything with Retrieval-Aug
 - [Usage](#usage)
 - [Data & privacy](#data--privacy)
 - [Troubleshooting](#troubleshooting)
-- [Built on the Sheryians tutorial](#built-on-the-sheryians-tutorial)
 - [Limitations & ideas](#limitations--ideas)
-- [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -196,6 +198,16 @@ AI-Video-Assistant-With-RAG/
 
 ## Getting started
 
+### Try it online
+
+The app is deployed on Streamlit Community Cloud: **[open the live demo](https://ai-video-assistant-with-rag-enhylzyarkuexzqkhky3hc.streamlit.app/)**.
+Create an account and click one of the **"Try one"** examples. No setup needed.
+
+> The demo runs on free hosting: accounts and the library reset when the app restarts, and YouTube may block
+> downloads from cloud servers. If a YouTube link fails, use **Upload file** instead.
+
+To run it on your own machine, follow the steps below.
+
 ### Prerequisites
 
 - **Python 3.12**
@@ -298,10 +310,6 @@ and TXT reports to `exports/`, then opens an interactive chat (type `exit` to qu
 | "Ran out of memory" | Close other apps, add a Groq key, or set `WHISPER_MODEL=base`. |
 | `FFmpeg not found` | Install FFmpeg and add its `bin` folder to `PATH`. |
 | Code changes don't show up | The file watcher is off (to avoid noisy logs). Restart `streamlit run app.py`. |
-
-## Built on the Sheryians tutorial
-
-
 
 ## Limitations & ideas
 
