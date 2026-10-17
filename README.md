@@ -323,10 +323,3 @@ This project started from the Sheryians AI School tutorial
 - Groq's free tier limits audio hours per hour and per day; very long videos may fall back to local Whisper.
 - Ideas: speaker diarisation, timestamped answers that jump to the moment in the video, multi-video chat,
   and more output languages.
-
-## Acknowledgements
-
-- [Sheryians AI School](https://sheryians.com/) for the original tutorial
-- [Mistral AI](https://mistral.ai), [Groq](https://groq.com), [Sarvam AI](https://www.sarvam.ai)
-- [LangChain](https://www.langchain.com), [ChromaDB](https://www.trychroma.com), [Streamlit](https://streamlit.io),
-  [yt-dlp](https://github.com/yt-dlp/yt-dlp), [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
