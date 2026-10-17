@@ -1,0 +1,32 @@
+# ── Audio / Transcription ─────────────────────────────────────────────────────
+faster-whisper>=1.1.0     # Whisper via CTranslate2 (int8) — ~4x faster on CPU than openai-whisper
+yt-dlp[default]>=2026.8.19 # YouTube audio download (+ yt-dlp-ejs challenge solver; needs Node.js or Deno)
+ffmpeg-python>=0.2.0      # Audio processing wrapper
+pydub
+
+requests                  # Sarvam AI API (Hindi/Hinglish → English)
+
+# ── LLM / LangChain ───────────────────────────────────────────────────────────
+langchain-core>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-mistralai>=0.1.0
+mistralai>=0.4.0           # Mistral free API client
+
+# ── RAG Pipeline ──────────────────────────────────────────────────────────────
+chromadb>=0.5.0
+langchain-chroma>=0.1.0
+sentence-transformers>=3.0.0   # HuggingFace embeddings
+langchain-huggingface>=0.0.3
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Export ────────────────────────────────────────────────────────────────────
+fpdf2>=2.7.9               # PDF export
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0       # API key management
+bcrypt>=4.0.0              # Password hashing for login / sign-up
+torch>=2.2.0               # Required by sentence-transformers (embeddings)
+torchaudio>=2.2.0
+numpy>=1.26.0

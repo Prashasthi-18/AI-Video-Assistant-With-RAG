@@ -1,0 +1,28 @@
+# Secrets — never commit
+.env
+
+# Local data (accounts, sessions, saved analyses)
+users.db
+*.db
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Generated / downloaded media and caches
+downloads/
+exports/
+vector_db/
+chroma_db/
+*.webm
+*.wav
+*.mp3
+*.mp4
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
