@@ -301,20 +301,7 @@ and TXT reports to `exports/`, then opens an interactive chat (type `exit` to qu
 
 ## Built on the Sheryians tutorial
 
-This project started from the Sheryians AI School tutorial
-[**AI Video Assistant With RAG | Full Project in Python**](https://www.youtube.com/watch?v=xlYJhtL0qbQ)
-([original code](https://github.com/AkarshVyas/AI-Video-Assistant-)). It keeps the same core pipeline
-(Whisper/Sarvam → Mistral + LangChain → ChromaDB RAG) and adds:
 
-- **Faster transcription**: YouTube captions first, Groq cloud Whisper, and faster-whisper (int8)
-  instead of openai-whisper, with automatic fallbacks.
-- **Reliability fixes**:
-  - `.env` is loaded before imports, so the Sarvam key is actually used.
-  - One vector collection per video, so chat answers don't mix videos.
-  - A Mistral rate limiter with retries.
-  - Fixed YouTube 403 errors.
-  - Low-memory handling.
-- **Full app**: accounts, persistent sessions, a saved library, PDF/TXT export, and a redesigned UI.
 
 ## Limitations & ideas
 
