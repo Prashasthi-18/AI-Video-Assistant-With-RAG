@@ -1,7 +1,9 @@
+# CPU-only PyTorch (much smaller than the default CUDA build; no GPU needed)
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 # ── Audio / Transcription ─────────────────────────────────────────────────────
 faster-whisper>=1.1.0     # Whisper via CTranslate2 (int8) — ~4x faster on CPU than openai-whisper
 yt-dlp[default]>=2026.8.19 # YouTube audio download (+ yt-dlp-ejs challenge solver; needs Node.js or Deno)
-ffmpeg-python>=0.2.0      # Audio processing wrapper
 pydub
 
 requests                  # Sarvam AI API (Hindi/Hinglish → English)
@@ -28,5 +30,4 @@ fpdf2>=2.7.9               # PDF export
 python-dotenv>=1.0.0       # API key management
 bcrypt>=4.0.0              # Password hashing for login / sign-up
 torch>=2.2.0               # Required by sentence-transformers (embeddings)
-torchaudio>=2.2.0
 numpy>=1.26.0
